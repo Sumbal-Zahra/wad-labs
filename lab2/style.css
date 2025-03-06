@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c4bdea; 
+    color: #222; 
+    text-align: center;
+}
+
+h1 {
+    background-color: #385c85; 
+    color: white; 
+    padding: 20px;
+    margin: 0;
+    font-size: 2em;
+}
+
+h2 {
+    color: #385c85; 
+    font-size: 1.8em;
+    margin-top: 20px;
+    border-bottom: 2px solid #4a90e2; 
+    padding-bottom: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #385c85; 
+    padding: 15px 0;
+}
+
+nav a {
+    color: white; 
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #4a90e2; 
+}
+
+/* Content Sections */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgb(242, 195, 217); 
+    padding: 25px;
+    border-radius: 12px;
+   
+
+p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #333; /* Dark gray text */
+}
+
+ul {
+    list-style-type: square;
+    padding: 0;
+    text-align: left;
+    margin-left: 20px;
+}
+
+ul li {
+    margin: 8px 0;
+    font-size: 1.1em;
+    color: #555; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #4a90e2;
+   
+}
+
+ul li:hover {
+    background-color: rgba(255, 255, 255, 1); 
+}
+
+/* Image Styling */
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border: 4px solid #4a90e2; 
+}
+
+/* Contact Section */
+a {
+    color: #4a90e2; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #eaedf1; 
+    text-decoration: underline;
+}
+}
