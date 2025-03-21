@@ -139,7 +139,7 @@ figure figcaption {
 
 /* Profile Card */
 .profile-card {
-    background-color: var(--card-background);
+   background-color: var(--card-background);
     padding: 20px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);

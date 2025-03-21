@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Gradesheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="pic5.jpeg" alt="Logo">
+            <h1>Sumbal Zahra</h1>
+        </div>
+    </header>
+
+    <!-- Gradesheet Table -->
+    <section class="gradesheet">
+        <h2>Student Grades</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Grade</th>
+                    <th>Attendance (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>101</td>
+                    <td>Minahal Fatima</td>
+                    <td>WAD</td>
+                    <td>A</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>102</td>
+                    <td>Gulshan Fatima</td>
+                    <td>CCN</td>
+                    <td>B+</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>103</td>
+                    <td>Kalsoom Khan</td>
+                    <td>HCI</td>
+                    <td>A-</td>
+                    <td>92</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>104</td>
+                    <td>Sumbal Zahra</td>
+                    <td>TOA</td>
+                    <td>C</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>105</td>
+                    <td>zara Khan</td>
+                    <td>CCN</td>
+                    <td>B</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>106</td>
+                    <td>Sara khan</td>
+                    <td>CG</td>
+                    <td>A+</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>107</td>
+                    <td>Sana Shah</td>
+                    <td>TOA</td>
+                    <td>B-</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>108</td>
+                    <td>Semab Tabassum</td>
+                    <td>WAD</td>
+                    <td>A</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>109</td>
+                    <td>Haya Ali</td>
+                    <td>HCI</td>
+                    <td>C+</td>
+                    <td>78</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>110</td>
+                    <td>Tania</td>
+                    <td>CG</td>
+                    <td>B+</td>
+                    <td>89</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Student Data Form -->
+    <section class="student-form">
+        <h2>Add New Student</h2>
+        <form>
+            <label for="student-id">Student ID:</label>
+            <input type="number" id="student-id" name="student-id" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="WAD">WAD</option>
+                <option value="CG">CG</option>
+                <option value="TOA">TOA</option>
+                <option value="CCN">CCN</option>
+                <option value="HCI">HCI</option>
+            </select>
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" required>
+
+            <label for="attendance">Attendance (%):</label>
+            <input type="number" id="attendance" name="attendance" min="0" max="100" required>
+
+            <button type="submit">Add Student</button>
+        </form>
+    </section>
+
+    <!-- Short Report Section -->
+    <section class="report">
+        <h2>Report</h2>
+        <p>
+            In this task, I created a student gradesheet table and a form for adding new student records. 
+            The table displays student information such as <code>&lt;Serial No.&gt;</code>, <code>&lt;Student ID&gt;</code>, <code>&lt;Name&gt;</code>, <code>&lt;Course&gt;</code>, <code>&lt;Grade&gt;</code>, and <code>&lt;Attendance (%)&gt;</code>. 
+            The form allows users to input new student data using various input types like <code>&lt;text&gt;</code>, <code>&lt;number&gt;</code>, and <code>&lt;select&gt;</code> dropdowns. 
+            I used semantic HTML elements like <code>&lt;table&gt;</code>, <code>&lt;form&gt;</code>, and <code>&lt;section&gt;</code> to structure the content. 
+            CSS was used to style the page, ensuring a clean and professional design. 
+            The header includes a logo and website name, while the footer displays a copyright message.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Student Gradesheet. Created by Sumbal Zahra.</p>
+    </footer>
+</body>
+</html>
