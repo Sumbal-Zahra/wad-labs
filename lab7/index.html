@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+
+<section class="gradesheet">
+  <h2>Student Grades</h2>
+  <div id="table-container"></div>
+  <button onclick="findAverage()" style="margin: 10px 0; background-color: var(--accent-color); color: white; padding: 10px 20px; border: none; border-radius: var(--border-radius); cursor: pointer;">Find Average</button>
+</section>
+
+<script>
+
+const students = [
+  { serial: 1, id: 101, name: "Minahal Fatima", course: "WAD", grade: "A", attendance: 95 },
+  { serial: 2, id: 102, name: "Gulshan Fatima", course: "CCN", grade: "B+", attendance: 88 },
+  { serial: 3, id: 103, name: "Kalsoom Khan", course: "HCI", grade: "A-", attendance: 92 },
+  { serial: 4, id: 104, name: "Sumbal Zahra", course: "TOA", grade: "C", attendance: 75 },
+  { serial: 5, id: 105, name: "Zara Khan", course: "CCN", grade: "B", attendance: 85 },
+  { serial: 6, id: 106, name: "Sara Khan", course: "CG", grade: "A+", attendance: 98 },
+  { serial: 7, id: 107, name: "Sana Shah", course: "TOA", grade: "B-", attendance: 80 },
+  { serial: 8, id: 108, name: "Semab Tabassum", course: "WAD", grade: "A", attendance: 94 },
+  { serial: 9, id: 109, name: "Haya Ali", course: "HCI", grade: "C+", attendance: 78 },
+  { serial: 10, id: 110, name: "Tania", course: "CG", grade: "B+", attendance: 89 }
+];
+
+
+function createTable() {
+  const container = document.getElementById("table-container");
+  const table = document.createElement("table");
+  table.setAttribute("id", "grades-table");
+
+  
+  const thead = document.createElement("thead");
+  thead.innerHTML = `
+    <tr>
+      <th>Serial No.</th>
+      <th>Student ID</th>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Grade</th>
+      <th>Attendance (%)</th>
+    </tr>
+  `;
+  table.appendChild(thead);
+
+  
+  const tbody = document.createElement("tbody");
+  students.forEach(student => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${student.serial}</td>
+      <td>${student.id}</td>
+      <td>${student.name}</td>
+      <td>${student.course}</td>
+      <td>${student.grade}</td>
+      <td>${student.attendance}</td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  
+  const avgRow = document.createElement("tr");
+  avgRow.setAttribute("id", "avg-row");
+  avgRow.innerHTML = `
+    <td colspan="5" style="font-weight:bold;">Average Attendance</td>
+    <td id="avg-value">--</td>
+  `;
+  tbody.appendChild(avgRow);
+
+  table.appendChild(tbody);
+  container.appendChild(table);
+}
+
+
+function findAverage() {
+  const total = students.reduce((sum, student) => sum + student.attendance, 0);
+  const avg = (total / students.length).toFixed(2);
+  document.getElementById("avg-value").innerText = avg;
+}
+
+
+window.onload = createTable;
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+:root {
+    --primary-color: #910b67; 
+    --accent-color: #d66db8; 
+    --background-color: #e5bdde; 
+    --card-background: white; 
+    --text-color: #333; 
+    --light-text-color: #555; 
+    --font-family: 'Poppins', sans-serif;
+    --border-radius: 10px;
+    --box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);  
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 1em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+
+header{
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .logo img,
+header .logo h1 {
+    display: inline-block; 
+    vertical-align: middle; 
+    margin: 0; 
+}
+
+header .logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px; 
+    border-radius: 50%;
+}
+
+
+.gradesheet {
+    margin: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--card-background);
+    box-shadow: var(--box-shadow);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #efd5e5;
+}
+
+table tr:hover {
+    background-color: #ce599a;
+    color: white;
+}
